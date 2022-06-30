@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.simplethoughts.R
 import com.example.simplethoughts.database.DBHandler
 import com.example.simplethoughts.ui.login.LoginActivity
+import com.example.simplethoughts.ui.main.UsersActivity
 import com.github.dhaval2404.imagepicker.ImagePicker
 import kotlinx.android.synthetic.main.activity_registration.*
 import java.io.ByteArrayOutputStream
@@ -73,9 +74,16 @@ class RegistrationActivity : AppCompatActivity() {
                 if (insertMessage.equals("User Registered")) {
                     clearField()
 
+                    val loggedIn = intent.getBooleanExtra("loggedIn", false)
+
                     // Intent to Login Page so that created user or existing user can login
-                    val myIntent: Intent = Intent(this, LoginActivity::class.java)
-                    startActivity(myIntent)
+                    if (loggedIn) {
+                        val myIntent: Intent = Intent(this, UsersActivity::class.java)
+                        startActivity(myIntent)
+                    } else {
+                        val myIntent: Intent = Intent(this, LoginActivity::class.java)
+                        startActivity(myIntent)
+                    }
 
                     Toast.makeText(this, "Your account is created! Please Log In", Toast.LENGTH_SHORT).show()
 

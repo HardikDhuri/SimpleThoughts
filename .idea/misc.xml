@@ -3,20 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/add_user.xml" value="0.2095" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.275" />
         <entry key="app/src/main/res/drawable/ic_user.xml" value="0.186" />
         <entry key="app/src/main/res/drawable/mode-portrait_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/round_image_btn.xml" value="0.186" />
+        <entry key="app/src/main/res/layout-land/activity_user_details.xml" value="0.375" />
+        <entry key="app/src/main/res/layout-land/fragment_display_users.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.2776268115942029" />
         <entry key="app/src/main/res/layout/activity_registration.xml" value="0.1887031408308004" />
         <entry key="app/src/main/res/layout/activity_upload_profile_picture.xml" value="0.2776268115942029" />
-        <entry key="app/src/main/res/layout/activity_user_details.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_user_details.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_all_users.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/fragment_display_users.xml" value="0.1887031408308004" />
+        <entry key="app/src/main/res/layout/fragment_display_users.xml" value="0.16176470588235295" />
         <entry key="app/src/main/res/layout/fragment_user_detail.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/user_activity_menu.xml" value="0.21105072463768115" />
         <entry key="app/src/main/res/layout/user_profile.xml" value="0.335" />
+        <entry key="app/src/main/res/menu/user_activity_menu.xml" value="0.3104166666666667" />
       </map>
     </option>
   </component>

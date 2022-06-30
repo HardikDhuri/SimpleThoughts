@@ -7,14 +7,38 @@
     android:orientation="vertical"
     tools:context=".ui.main.UsersActivity">
 
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/all_users_rv"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#C8C8C8"
-        android:padding="10dp"
-        tools:context=".fragments.AllUsers"/>
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:background="@color/purple_500"
+            android:id="@+id/user_activity_toolbar"
+            app:title="Simple Thoughts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/user_activity_menu">
+
+            <ImageButton
+                android:id="@+id/add_new_user_button"
+                android:background="@color/purple_500"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_user"
+                android:layout_gravity="end"
+                android:layout_marginRight="20dp"/>
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <fragment
+        android:id="@+id/display_users_fragment"
+        android:name="com.example.simplethoughts.fragments.DisplayUsersFragment"
+        tools:layout="@layout/fragment_display_users"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
     <fragment
         android:id="@+id/user_details_fragment"
